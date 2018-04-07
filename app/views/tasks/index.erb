@@ -1,0 +1,7 @@
+
+<h1>Todos</h1>
+<ul class="collection">
+<% @tasks.each do |x| %>
+<li class='collection-item'><a href="tasks/<%=x.id%>"><%= x.title %></a></li>
+<% end %>
+</ul>
